@@ -69,7 +69,7 @@ export function Dashboard() {
             <InputButton
               testID="input-button"
               onPress={handleAddRepository}
-              disabled={!!inputText}
+              disabled={inputText? false : true}
             >
               <Icon name="search" size={20} />
             </InputButton>
